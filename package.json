@@ -1,0 +1,27 @@
+{
+  "name": "openshift3",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "ejs": "^2.4.1"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanjmerono/openshift3.git"
+  },
+  "author": "Juanjo Meroño <jjmerono@gmail.com>",
+  "license": "CC-BY-1.0",
+  "bugs": {
+    "url": "https://github.com/juanjmerono/openshift3/issues"
+  },
+  "homepage": "https://github.com/juanjmerono/openshift3"
+}
