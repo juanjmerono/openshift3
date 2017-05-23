@@ -5,9 +5,11 @@ var express = require('express'),
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
+var file = process.env.MY_FILE || 'index';
+
 app.engine('html', require('ejs').renderFile);
 app.get('/', function (req, res) {
-  res.render('index.html');
+  res.render(file+'.html');
 });
 
 // error handling
