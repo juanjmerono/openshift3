@@ -175,7 +175,11 @@
             "kind": "BuildConfigList",
             "apiVersion": "v1",
             "metadata": {
-                "name": 
+                "name": "${WEB_SERVICE_NAME}",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "${WEB_SERVICE_NAME}"
+                }
             },
             "items": [
                 {
@@ -461,7 +465,11 @@
             "kind": "ServiceList",
             "apiVersion": "v1",
             "metadata": {
-
+                "name": "${WEB_SERVICE_NAME}",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "${WEB_SERVICE_NAME}"
+                }
             },
             "items": [
                 {
@@ -526,7 +534,11 @@
             "kind": "RouteList",
             "apiVersion": "v1",
             "metadata": {
-
+                "name": "${WEB_SERVICE_NAME}",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "${WEB_SERVICE_NAME}"
+                }
             },
             "items": [
                 {
@@ -581,6 +593,12 @@
         {
             "name": "SOURCE_REPOSITORY_REF",
             "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch"
+        },
+        {
+            "name": "WEB_SERVICE_NAME",
+            "description": "Global Web service name",
+            "value": "global",
+            "required": true
         },
         {
             "name": "INDEX_WEB_SERVICE_NAME",
